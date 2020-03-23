@@ -1,21 +1,17 @@
 import React, {Component} from 'react';
 import './App.css';
-import {createMuiTheme} from "material-ui/core/styles";
-import blue from 'material-ui/styles/colors/blue';
-import {AppBar} from "material-ui/AppBar";
+import Header from '../Layouts/Header';
+import Login from '../Layouts/Login/Login'
 
-const theme = createMuiTheme({
-    palette: {
-        primary: blue,
-    },
-});
 
 class App extends Component {
     render() {
         return (
-            <AppBar title="Senes">
-                
-            </AppBar>
+            <div class="base">
+                <Header/>
+                <Login/>
+                <p class="forgot" style={{color: '#8190A5'}}>Esqueceu sua senha?</p>
+            </div>
         );
     }
 }

@@ -1,0 +1,18 @@
+.base {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 100%;
+    text-align: center;
+}
+
+.title{
+    letter-spacing: 15px;
+    font-size: 50px;
+}
+
+.text{
+    font-size: 25px;
+}
+
+.forgot{
+    font-size: 15px;
+}

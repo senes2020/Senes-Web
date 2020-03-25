@@ -10,7 +10,6 @@ class App extends Component {
             <div class="base">
                 <Header/>
                 <Login/>
-                <p class="forgot" style={{color: '#8190A5'}}>Esqueceu sua senha?</p>
             </div>
         );
     }

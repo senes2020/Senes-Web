@@ -15,4 +15,10 @@
 
 .forgot{
     font-size: 15px;
+    text-decoration: none;
+}
+
+.loginImg{
+    width: 350px;
+    height: auto;
 }

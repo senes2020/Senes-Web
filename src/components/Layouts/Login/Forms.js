@@ -17,9 +17,9 @@ export default function BasicTextFields() {
 
   return (
     <form className={classes.root} noValidate autoComplete="off">
-        <TextField id="outlined-basic" label="Usuário" variant="outlined"/>
+        <TextField id="outlined-basic" label="CPF" variant="outlined"/>
         <br/>
-        <TextField id="outlined-basic" label="Senha" variant="outlined" />
+        <TextField id="outlined-basic" label="Senha" variant="outlined" type="password"/>
         <br/>
         <Button variant="contained" style={{background: '#000000', color: '#ffffff'}}>
             Entrar

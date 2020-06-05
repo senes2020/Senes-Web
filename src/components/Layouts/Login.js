@@ -4,6 +4,7 @@ import Image from '../../images/login.png';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 import fire from '../../config/Fire';
+import Header from '../Layouts/Header'
 
 class Login extends Component{
     constructor(props){
@@ -43,15 +44,18 @@ class Login extends Component{
 
     render(){
         return(
-            <Grid spacing={3}>
+            <Grid container spacing={0}>
                 <Grid item xs={12}>
-                    <p class="title">Senes</p>
+                    <Header/>
                 </Grid>
                 <Grid item xs={12}>
-                    <p class="text">Que bom ver você de novo!</p>
+                    <p className="title">Senes</p>
                 </Grid>
                 <Grid item xs={12}>
-                    <form class="root" noValidate autoComplete="off">
+                    <p className="text">Que bom ver você de novo!</p>
+                </Grid>
+                <Grid item xs={12}>
+                    <form className="root" noValidate autoComplete="off">
                         <TextField
                             type="email" 
                             id="email" 
@@ -60,6 +64,7 @@ class Login extends Component{
                             label="E-mail" 
                             variant="outlined"
                             name="email"
+                            style={{marginBottom:"20px", width:"350px"}}
                         />
                         <br/>
                         <TextField 
@@ -70,12 +75,13 @@ class Login extends Component{
                             label="Senha" 
                             variant="outlined"
                             name="password"
+                            style={{marginBottom:"20px", width:"350px"}}
                         />
                         <br/>
                         <Button 
                             variant="contained" 
                             style={
-                                {background: '#000000', color: '#ffffff'}
+                                {background: '#000000', color: '#ffffff', marginBottom:"5px"}
                             }
                             onClick={this.login}
 
@@ -83,16 +89,16 @@ class Login extends Component{
                             Entrar
                         </Button>
                     </form>
-                    <a href="" class="forgot" style={{color: '#8190A5'}}>Esqueceu sua senha?</a>
+                    <a href="" className="forgot" style={{color: '#8190A5'}}>Esqueceu sua senha?</a>
                 </Grid>
                 <Grid item xs={12}>
-                    <p class="forgot">
+                    <p className="forgot">
                         Ainda não tem uma conta?
                         <Button 
                             onClick={this.signup} 
                             variant="contained" 
                             style={
-                                {background: '#000000', color: '#ffffff'}
+                                {background: '#000000', color: '#ffffff', marginLeft:"15px"}
                             }
                         >
                                 Cadastre-se aqui!
@@ -100,7 +106,7 @@ class Login extends Component{
                     </p>
                 </Grid>
                 <Grid item xs={12}>
-                    <img src={Image} class="loginImg"></img>
+                    <img src={Image} className="loginImg"></img>
                 </Grid>
             </Grid>
         )

@@ -22,3 +22,22 @@
     width: 350px;
     height: auto;
 }
+
+.homeImgPrimary{
+    width: 80%;
+    height: auto;
+    margin-top: 50px;
+}
+
+.homeText{
+    padding: 50px;
+    margin-top: 50px;
+}
+
+.titleHome{
+    font-size: 40px;
+}
+
+.textHome{
+    font-size: 25px;
+}

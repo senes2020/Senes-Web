@@ -1,24 +1,26 @@
 import React, {Component} from 'react';
-import fire from '../../config/Fire';
-import { Button } from '@material-ui/core';
+import { Button, Grid } from '@material-ui/core';
+import Image from '../../images/homeImg.jpg';
+import Header from '../Layouts/Header';
 
 class Home extends Component{
-    constructor(props){
-        super(props)
-        this.state={
-        }
-    }
-
-    logout(){
-        fire.auth().signOut();
-    }
 
     render(){
         return(
-            <div>
-                <h1>Você está logado!</h1>
-                <Button onClick={this.logout}>Logout</Button>
-            </div>
+            <Grid container spacing={0}>
+                <Grid item xs={12}>
+                    <Header/>
+                </Grid>
+                <Grid item xs={6} className="homeText">
+                    <h1 className="titleHome">Cuide de quem você ama sem sair da rotina agitada!</h1>
+                    <p className="textHome">O propósito da Senes é disponibilizar cuidados para familiares de quem tem uma rotina atarefada e não tem muito tempo livre.</p>
+                    <Button style={{background: '#000000', color: '#ffffff'}}>Saiba mais</Button>
+                    
+                </Grid>
+                <Grid item xs={6}>
+                    <img src={Image} className="homeImgPrimary"></img>
+                </Grid>
+            </Grid>
         )
     }
 }

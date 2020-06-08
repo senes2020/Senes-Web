@@ -46,9 +46,6 @@ class Login extends Component{
         return(
             <Grid container spacing={0}>
                 <Grid item xs={12}>
-                    <Header/>
-                </Grid>
-                <Grid item xs={12}>
                     <p className="title">Senes</p>
                 </Grid>
                 <Grid item xs={12}>

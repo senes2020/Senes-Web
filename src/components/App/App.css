@@ -41,3 +41,26 @@
 .textHome{
     font-size: 25px;
 }
+
+.footer{
+    margin-top: 50px;
+    height: 110px;
+    background-color: #47525E;
+    color: #ffffff;
+    padding: 30px;
+}
+
+.horizontalList{
+    list-style: none;
+    padding-top: 30px;
+}
+
+.horizontalList li{
+    display: inline;
+    margin-right: 55px;
+    font-size: 20px;
+}
+
+.footerAddress{
+    padding: 15px;
+}

@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import { Button, Grid } from '@material-ui/core';
 import Image from '../../images/homeImg.jpg';
 import Header from '../Layouts/Header';
+import Footer from '../Layouts/Footer'
 
 class Home extends Component{
 
@@ -20,6 +21,7 @@ class Home extends Component{
                 <Grid item xs={6}>
                     <img src={Image} className="homeImgPrimary"></img>
                 </Grid>
+                <Footer/>
             </Grid>
         )
     }

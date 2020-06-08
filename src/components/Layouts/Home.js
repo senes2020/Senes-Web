@@ -21,7 +21,6 @@ class Home extends Component{
                 <Grid item xs={6}>
                     <img src={Image} className="homeImgPrimary"></img>
                 </Grid>
-                <Footer/>
             </Grid>
         )
     }

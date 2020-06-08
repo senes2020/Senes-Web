@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import './App.css';
-import Header from '../Layouts/Header';
+import Footer from '../Layouts/Footer';
 import Home from '../Layouts/Home';
 import Login from '../Layouts/Login';
 import fire from '../../config/Fire';
@@ -31,6 +31,7 @@ class App extends Component {
         return (
             <div className="base">
                 {this.state.user ? <Home/> : <Login/>}
+                <Footer/>
             </div>
         );
     }

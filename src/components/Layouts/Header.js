@@ -37,13 +37,32 @@ logout(){
           <Grid item xs={12}>
           <AppBar position="static" style={{ background: '#000000'}}>
               <Toolbar>
-              <Typography variant="h6">
-                  Senes
-              </Typography>
-              <Button style={{background: '#000000', color: '#ffffff', marginLeft: "50%"}}>Home</Button>
-              <Button style={{background: '#000000', color: '#ffffff', marginLeft: "5%"}}>Trabalhe Conosco</Button>
-              <Button style={{background: '#000000', color: '#ffffff', marginLeft: "5%"}}>Saiba Mais</Button>
-              {this.state.user ? <Button onClick={this.logout} style={{background: '#000000', color: '#ffffff', marginLeft: "5%"}}>Logout</Button> : ""}
+                  <Grid item xs={4} style={{ textAlign: 'left'}}>
+                    <Button style={{background: '#000000', color: '#ffffff'}}>Senes</Button>
+                  </Grid>
+                  <Grid item xs={2}>
+                    <Button style={{background: '#000000', color: '#ffffff'}}>Home</Button>
+                  </Grid>
+                  <Grid item xs={2}>
+                    <Button style={{background: '#000000', color: '#ffffff'}}>Trabalhe Conosco</Button>
+                  </Grid>
+                  <Grid item xs={2}>
+                    <Button style={{background: '#000000', color: '#ffffff'}}>Saiba Mais</Button>
+                  </Grid>
+                  <Grid item xs={2}>
+                    {
+                    this.state.user ? 
+                        <Button onClick={this.logout} 
+                            style={{background: '#000000', color: '#ffffff'}}>
+                                Logout
+                        </Button> 
+                        : ""
+                    }
+                  </Grid>
+               
+                
+                
+                
               </Toolbar>
           </AppBar>
           </Grid>

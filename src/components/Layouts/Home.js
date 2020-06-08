@@ -9,9 +9,6 @@ class Home extends Component{
     render(){
         return(
             <Grid container spacing={0}>
-                <Grid item xs={12}>
-                    <Header/>
-                </Grid>
                 <Grid item xs={6} className="homeText">
                     <h1 className="titleHome">Cuide de quem você ama sem sair da rotina agitada!</h1>
                     <p className="textHome">O propósito da Senes é disponibilizar cuidados para familiares de quem tem uma rotina atarefada e não tem muito tempo livre.</p>

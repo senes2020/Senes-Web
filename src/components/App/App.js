@@ -4,6 +4,7 @@ import Footer from '../Layouts/Footer';
 import Home from '../Layouts/Home';
 import Login from '../Layouts/Login';
 import fire from '../../config/Fire';
+import Header from '../Layouts/Header';
 
 
 class App extends Component {
@@ -30,6 +31,7 @@ class App extends Component {
     render() {
         return (
             <div className="base">
+                <Header/>
                 {this.state.user ? <Home/> : <Login/>}
                 <Footer/>
             </div>

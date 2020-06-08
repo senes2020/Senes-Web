@@ -1,8 +1,6 @@
 import React, {Component} from 'react';
 import { Button, Grid } from '@material-ui/core';
 import Image from '../../images/homeImg.jpg';
-import Header from '../Layouts/Header';
-import Footer from '../Layouts/Footer'
 
 class Home extends Component{
 

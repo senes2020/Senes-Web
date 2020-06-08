@@ -1,66 +1,66 @@
 .base {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    width: 100%;
-    text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  width: 100%;
+  text-align: center;
 }
 
 .title{
-    letter-spacing: 15px;
-    font-size: 50px;
+  letter-spacing: 15px;
+  font-size: 50px;
 }
 
 .text{
-    font-size: 25px;
+  font-size: 25px;
 }
 
 .forgot{
-    font-size: 15px;
-    text-decoration: none;
+  font-size: 15px;
+  text-decoration: none;
 }
 
 .loginImg{
-    width: 350px;
-    height: auto;
+  width: 350px;
+  height: auto;
 }
 
 .homeImgPrimary{
-    width: 80%;
-    height: auto;
-    margin-top: 50px;
+  width: 80%;
+  height: auto;
+  margin-top: 50px;
 }
 
 .homeText{
-    padding: 50px;
-    margin-top: 50px;
+  padding: 50px;
+  margin-top: 50px;
 }
 
 .titleHome{
-    font-size: 40px;
+  font-size: 40px;
 }
 
 .textHome{
-    font-size: 25px;
+  font-size: 25px;
 }
 
 .footer{
-    margin-top: 50px;
-    height: 110px;
-    background-color: #47525E;
-    color: #ffffff;
-    padding: 30px;
+  margin-top: 50px;
+  height: 110px;
+  background-color: #47525E;
+  color: #ffffff;
+  padding: 30px;
 }
 
 .horizontalList{
-    list-style: none;
-    padding-top: 30px;
+  list-style: none;
+  padding-top: 30px;
 }
 
 .horizontalList li{
-    display: inline;
-    margin-right: 55px;
-    font-size: 20px;
+  display: inline;
+  margin-right: 55px;
+  font-size: 20px;
 }
 
 .footerAddress{
-    padding: 15px;
+  padding: 15px;
 }

@@ -90,13 +90,7 @@ class Signup extends Component {
               style={{ marginBottom: "20px", width: "350px" }}
             />
             <br />
-            <Button
-              variant="contained"
-              style={
-                { background: '#000000', color: '#ffffff', marginBottom: "5px", padding: "0"}
-              }
-              onClick={this.signup}
-            >
+            <Button variant="contained" style={{ background: '#000000', color: '#ffffff', marginBottom: "5px", padding: "0"}} onClick={this.signup}>
               <Link to="/" style={{textDecoration: 'none', color: '#ffffff', margin: "5px"}}>
                 Pode me cadastrar!
               </Link>

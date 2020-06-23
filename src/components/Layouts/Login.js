@@ -78,31 +78,32 @@ class Login extends Component {
               style={{ marginBottom: "20px", width: "350px" }}
             />
             <br />
-            <Button
-              variant="contained"
-              style={
-                { background: '#000000', color: '#ffffff', marginBottom: "5px" }
-              }
-              onClick={this.login}
-
-            >
-              <Link to="/" style={{textDecoration: 'none', color: '#ffffff'}}>Entrar</Link>
-            </Button>
+            <Link to="/" style={{textDecoration: 'none', color: '#ffffff'}} onClick={this.login}>
+              <Button
+                variant="contained"
+                style={
+                  { background: '#000000', color: '#ffffff', marginBottom: "5px" }
+                }
+              >
+                Entrar
+              </Button>
+            </Link>
           </form>
           <a href="" className="forgot" style={{ color: '#8190A5' }}>Esqueceu sua senha?</a>
         </Grid>
         <Grid item xs={12}>
           <p className="forgot">
             Ainda não tem uma conta?
-            <Button
-              onClick={this.signup}
-              variant="contained"
-              style={
-                { background: '#000000', color: '#ffffff', marginLeft: "15px" }
-              }
-            >
-              Cadastre-se aqui!
-            </Button>
+            <Link to="/signup" style={{textDecoration: 'none', color: '#ffffff'}}>
+              <Button
+                variant="contained"
+                style={
+                  { background: '#000000', color: '#ffffff', marginLeft: "15px" }
+                }
+              >
+                Cadastre-se aqui!
+              </Button>
+            </Link>
           </p>
         </Grid>
         <Grid item xs={12}>

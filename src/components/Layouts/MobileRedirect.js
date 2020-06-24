@@ -7,14 +7,14 @@ import Button from '@material-ui/core/Button';
 import Image from '../../images/choose.png'
 import Image2 from '../../images/choose2.png'
 
-class MobileRedirect extends Component{
-    render(){
-        return(
-            <Grid container spacing={0}>
+class MobileRedirect extends Component {
+  render() {
+    return (
+      <Grid container spacing={0}>
 
-            </Grid>
-        )
-    }
+      </Grid>
+    )
+  }
 }
 
 export default MobileRedirect;

@@ -94,7 +94,7 @@ class Login extends Component {
         <Grid item xs={12}>
           <p className="forgot">
             Ainda não tem uma conta?
-            <Link to="/signup" style={{textDecoration: 'none', color: '#ffffff'}}>
+            <Link to="/choose" style={{textDecoration: 'none', color: '#ffffff'}}>
               <Button
                 variant="contained"
                 style={

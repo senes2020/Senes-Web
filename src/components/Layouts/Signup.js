@@ -47,56 +47,37 @@ class Signup extends Component {
     return (
       <Grid container spacing={0} className="base">
         <Grid item xs={12}>
-          <Header/>
+          <Header />
           <Grid item xs={12}>
-            <p className="title">Senes</p>
+            <p className="title">
+              Senes
+            </p>
           </Grid>
           <Grid item xs={12}>
-            <p className="text">Cadastre-se já, é rápido e fácil!</p>
+            <p className="text">
+              Cadastre-se já, é rápido e fácil!
+            </p>
           </Grid>
           <form className="root" noValidate autoComplete="off">
-            <TextField
-              label="Nome Completo"
-              variant="outlined"
-              style={{ marginBottom: "20px", width: "350px" }}
-            />
-            <br />
-            <TextField
-              type="email"
-              id="email"
-              onChange={this.handleChange}
-              value={this.state.email}
-              label="E-mail"
-              variant="outlined"
-              name="email"
-              style={{ marginBottom: "20px", width: "350px" }}
-            />
-            <br />
-            <TextField
-              type="password"
-              label="Senha"
-              variant="outlined"
-              style={{ marginBottom: "20px", width: "350px" }}
-            />
-            <br />
-            <TextField
-              type="password"
-              id="password"
-              onChange={this.handleChange}
-              value={this.state.password}
-              label="Confirme sua senha"
-              variant="outlined"
-              name="password"
-              style={{ marginBottom: "20px", width: "350px" }}
-            />
-            <br />
-            <Button variant="contained" style={{ background: '#000000', color: '#ffffff', marginBottom: "5px", padding: "0"}} onClick={this.signup}>
-              <Link to="/" style={{textDecoration: 'none', color: '#ffffff', margin: "5px"}}>
-                Pode me cadastrar!
-              </Link>
-            </Button>
+            <Grid item xs={12}>
+              <TextField label="Nome Completo" variant="outlined" style={{ marginBottom: "20px", width: "350px" }}/>
+            </Grid>
+            <Grid item xs={12}>
+              <TextField type="email" id="email" onChange={this.handleChange} value={this.state.email} label="E-mail" variant="outlined" name="email" style={{ marginBottom: "20px", width: "350px" }}/>
+            </Grid>
+            <Grid item xs={12}>
+              <TextField type="password" label="Senha" variant="outlined" style={{ marginBottom: "20px", width: "350px" }}/>
+            </Grid>
+            <TextField type="password" id="password" onChange={this.handleChange} value={this.state.password} label="Confirme sua senha" variant="outlined" name="password" style={{ marginBottom: "20px", width: "350px" }}/>
+            <Grid item xs={12}>
+              <Button variant="contained" style={{ background: '#000000', color: '#ffffff', marginBottom: "5px", padding: "0" }} onClick={this.signup}>
+                <Link to="/" style={{ textDecoration: 'none', color: '#ffffff', margin: "5px" }}>
+                  Pode me cadastrar!
+                </Link>
+              </Button>
+            </Grid>
           </form>
-          <Footer/>
+          <Footer />
         </Grid>
       </Grid>
     )

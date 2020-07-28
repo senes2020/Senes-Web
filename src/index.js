@@ -8,6 +8,9 @@ import Signup from './components/Layouts/Signup';
 import Login from './components/Layouts/Login';
 import ChooseType from './components/Layouts/ChooseType';
 import MobileRedirect from './components/Layouts/MobileRedirect';
+import WorkWith from './components/Layouts/WorkWith';
+import KnowMore from './components/Layouts/KnowMore';
+import Profile from './components/Layouts/Profile';
 
 ReactDOM.render(
     <BrowserRouter>
@@ -17,6 +20,9 @@ ReactDOM.render(
             <Route path="/login" component={Login} />
             <Route path="/choose" component={ChooseType}/>
             <Route path="/app" component={MobileRedirect}/>
+            <Route path="/workwith" component={WorkWith}/>
+            <Route path="/knowmore" component={KnowMore}/>
+            <Route path="/profile" component={Profile}/>
         </Switch>
     </ BrowserRouter>
     , document.getElementById('root')

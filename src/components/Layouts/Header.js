@@ -42,34 +42,38 @@ class Header extends Component {
               </Grid>
               <Grid item xs={2}>
                 <Button style={{ background: '#000000', color: '#ffffff' }}>
-                  <Link to="/"style={{ textDecoration: 'none', color: '#ffffff' }}>
+                  <Link to="/" style={{ textDecoration: 'none', color: '#ffffff' }}>
                     Home
                   </Link>
                 </Button>
               </Grid>
               <Grid item xs={2}>
                 <Button style={{ background: '#000000', color: '#ffffff' }}>
-                  Trabalhe Conosco
+                  <Link to="/workwith" style={{ textDecoration: 'none', color: '#ffffff' }}>
+                    Trabalhe Conosco
+                  </Link>
                 </Button>
               </Grid>
               <Grid item xs={2}>
                 <Button style={{ background: '#000000', color: '#ffffff' }}>
-                  Saiba Mais
+                  <Link to="/knowmore" style={{ textDecoration: 'none', color: '#ffffff' }}>
+                    Saiba Mais
+                  </Link>
                 </Button>
               </Grid>
               <Grid item xs={2}>
                 {
-                  this.state.user 
-                  ?
-                  <Button onClick={this.logout} style={{ background: '#000000', color: '#ffffff' }}>
-                    Logout
-                  </Button>
-                  :
-                  <Button style={{ background: '#000000', color: '#ffffff' }}>
-                    <Link to="/login" style={{ textDecoration: 'none', color: '#ffffff' }}>
-                      Login
-                    </Link>
-                  </Button>
+                  this.state.user
+                    ?
+                      <Button onClick={this.logout} style={{ background: '#000000', color: '#ffffff' }}>
+                        Logout
+                      </Button>
+                    :
+                    <Button style={{ background: '#000000', color: '#ffffff' }}>
+                      <Link to="/login" style={{ textDecoration: 'none', color: '#ffffff' }}>
+                        Login
+                      </Link>
+                    </Button>
                 }
               </Grid>
             </Toolbar>

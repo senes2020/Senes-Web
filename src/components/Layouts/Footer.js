@@ -16,10 +16,10 @@ class Footer extends Component {
               </ul>
             </Grid>
             <Grid item xs={6} className="footerAddress">
-              <Grid item xs={12} className="addressItem">Rua Fictícia nº X</Grid>
-              <Grid item xs={12} className="addressItem">Bairro Fictício</Grid>
-              <Grid item xs={12} className="addressItem">São Paulo - SP</Grid>
-              <Grid item xs={12} className="addressItem">06410-040</Grid>
+              <Grid item xs={12} className="addressItem">Rua Elton Silva, 905</Grid>
+              <Grid item xs={12} className="addressItem">Centro</Grid>
+              <Grid item xs={12} className="addressItem">Jandira - SP</Grid>
+              <Grid item xs={12} className="addressItem">06600-025</Grid>
             </Grid>
           </Grid>
         </div>
